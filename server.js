@@ -17,8 +17,9 @@ mongoose
   .connect(db, { useUnifiedTopology: true, useNewUrlParser: true })
   .then(() => console.log("M O N G O D B   C O N N E C T E D . . ."))
   .catch((err) => console.log("[ E R R O R ]: " + err));
-// app.use(require("./routes/routes.js"));
-// app.use(require("./routes/api.js"));
+  
+app.use(require("./routes/routes.js"));
+app.use(require("./routes/api.js"));
 
 app.listen(port, () =>
   console.log(`S E R V E R   S T A R T E D   O N   P O R T ${port}`)
