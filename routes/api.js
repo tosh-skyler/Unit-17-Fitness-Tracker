@@ -11,4 +11,4 @@ router.get('/exercise', (req, res) => {
     });
 });
 
-module.exports = router; 
+module.exports = router;
