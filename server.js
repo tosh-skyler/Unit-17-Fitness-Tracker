@@ -19,7 +19,7 @@ const express = require('express'),
 
 
 	mongoose
-		.connect(mongo_URI, { useUnifiedTopology: !0, useNewUrlParser: !0, useFindAndModify: !1 })
+		.connect('mongodb+srv://coffee:coffeeaddict@cluster0-3nocy.mongodb.net/test?retryWrites=true&w=majority', { useUnifiedTopology: !0, useNewUrlParser: !0, useFindAndModify: !1 })
 		.then(() => console.log('M O N G O D B   C O N N E C T E D . . .'))
     .catch((a) => console.log('[ E R R O R ]: ' + a)),
     
